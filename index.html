@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#1C1C1C">
+  <title>The Tank — Reliable Hot Water for Every Home</title>
+  <style id="the-tank-single-file-palette">
+
+:root {
+  --charcoal:#1C1C1C;
+  --gold:#F5B700;
+  --cream:#FFF8E6;
+  --bg:var(--charcoal);
+  --bg2:var(--charcoal);
+  --card:color-mix(in srgb,var(--cream) 6%,var(--charcoal));
+  --card2:color-mix(in srgb,var(--cream) 10%,var(--charcoal));
+  --line:rgba(255,248,230,.12);
+  --line2:rgba(255,248,230,.19);
+  --line3:rgba(255,248,230,.33);
+  --text:var(--cream);
+  --muted:rgba(255,248,230,.73);
+  --soft:rgba(255,248,230,.87);
+  --dim:rgba(255,248,230,.62);
+  --hot:var(--gold);
+  --hot2:var(--gold);
+  --hot-text:var(--gold);
+  --hot-dark:var(--charcoal);
+  --cold:var(--cream);
+  --cold2:var(--gold);
+  --paper:var(--cream);
+  --ink:var(--charcoal);
+  --ink-muted:rgba(28,28,28,.73);
+}
+
+/* Header, buttons and accent typography */
+.grad{background:none;color:var(--gold);-webkit-text-fill-color:var(--gold)}
+.btn-primary{
+  background:var(--gold);color:var(--charcoal);
+  box-shadow:0 10px 30px -10px rgba(245,183,0,.34),inset 0 1px 0 rgba(255,248,230,.3)
+}
+.btn-primary:hover{
+  background:var(--gold);
+  box-shadow:0 16px 40px -12px rgba(245,183,0,.48),inset 0 1px 0 rgba(255,248,230,.3)
+}
+.btn-ghost:hover{background:rgba(245,183,0,.1)}
+.site-header.scrolled{background:rgba(28,28,28,.93)}
+.site-header.open,.mobile-menu{background:rgba(28,28,28,.98)}
+.brand,.nav-links a:hover,.proof strong,.foot a:hover,.foot .col b{color:var(--cream)}
+.nav-links,.pill{background:rgba(255,248,230,.04)}
+.nav-links a:hover{background:rgba(255,248,230,.09)}
+.pill b{color:var(--charcoal)}
+.avatars span{color:var(--charcoal)}
+.avatars span[style*="#FFB547"]{background:var(--gold)!important}
+.avatars span[style*="#FF8C3A"]{background:var(--cream)!important}
+.avatars span[style*="#7CC0FF"]{background:var(--gold)!important}
+.avatars span[style*="#F4F1EB"]{background:var(--cream)!important}
+
+/* Hero glow, rings and floating metric cards */
+.hero-bg .o1{background:radial-gradient(circle,rgba(245,183,0,.24),transparent 65%)}
+.hero-bg .o2{background:radial-gradient(circle,rgba(255,248,230,.09),transparent 65%)}
+.stage .ring.r2{border-color:rgba(245,183,0,.30)}
+.chip{background:rgba(28,28,28,.90)}
+.chip .ci[style*="rgba(255,122,33"],
+.chip .ci[style*="rgba(61,220,132"],
+.chip .ci[style*="rgba(61,139,255"]{background:rgba(245,183,0,.13)!important}
+
+/* Features: cream surface, cream cards and gold feature panel */
+.light{background:var(--cream);color:var(--charcoal)}
+.light .eyebrow{color:var(--charcoal)}
+.b,.svc a{background:var(--cream);border-color:rgba(28,28,28,.17)}
+.b:hover{box-shadow:0 30px 60px -36px rgba(28,28,28,.22)}
+.b .ic,.svc .ic{background:rgba(245,183,0,.20)}
+.b1{background:var(--charcoal);border-color:var(--charcoal);color:var(--cream)}
+.b1 p{color:rgba(255,248,230,.75)}
+.b2{background:var(--gold);border-color:var(--gold);color:var(--charcoal)}
+.b2 p,.quote .qcopy p{color:var(--charcoal)}
+.b2 .ic{background:rgba(255,248,230,.36)}
+.bar.old{background:rgba(28,28,28,.14);color:var(--charcoal)}
+.bar.new{background:var(--charcoal);color:var(--cream)}
+.b2 .bar.old[style]{background:rgba(255,248,230,.55)!important;color:var(--charcoal)!important}
+.b2 .bar.new[style]{background:var(--charcoal)!important}
+.svc a:hover{background:var(--charcoal);color:var(--cream)}
+.svc a:hover p{color:rgba(255,248,230,.76)}
+.svc a:hover .arr{color:var(--charcoal)}
+
+/* Hotspots, sizing, service steps and visual indicators */
+.hs span{color:var(--cream)}
+.hs:hover span,.hs[aria-pressed="true"] span,
+.part[aria-pressed="true"] .num,.seg button[aria-pressed="true"]{color:var(--charcoal)}
+.part:hover{background:rgba(255,248,230,.05)}
+input[type=range]::-webkit-slider-thumb{background:var(--cream)}
+input[type=range]::-moz-range-thumb{background:var(--cream)}
+.sizer-r{background:radial-gradient(circle at 70% 20%,rgba(245,183,0,.17),transparent 60%),var(--bg2)}
+.gauge i{background:linear-gradient(90deg,var(--cream),var(--gold))}
+.ticks .t{background:rgba(245,183,0,.17)}
+.live i{background:var(--gold);box-shadow:0 0 0 0 rgba(245,183,0,.4);animation:gold-live 2s infinite}
+@keyframes gold-live{70%{box-shadow:0 0 0 10px rgba(245,183,0,0)}100%{box-shadow:0 0 0 0 rgba(245,183,0,0)}}
+
+/* FAQ and quote */
+.qa .pm{background:var(--cream);border-color:rgba(28,28,28,.2)}
+.qa button[aria-expanded="true"] .pm{background:var(--gold);border-color:var(--gold)}
+.quote{
+  background:radial-gradient(circle at 0% 0%,rgba(255,248,230,.16),transparent 45%),
+             radial-gradient(circle at 100% 100%,rgba(28,28,28,.10),transparent 60%),var(--gold);
+  color:var(--charcoal)
+}
+.quote::before{background-image:radial-gradient(rgba(28,28,28,.13) 1.2px,transparent 1.2px)}
+.quote .phone{color:var(--charcoal)}
+form{box-shadow:0 40px 80px -30px rgba(28,28,28,.37)}
+input:not([type=range]):focus,select:focus{box-shadow:0 0 0 4px rgba(245,183,0,.20)}
+input[aria-invalid="true"]{border-color:var(--gold)}
+.err{color:var(--gold)}
+
+/* Static inline SVG colours: heater renderings, chart, stars and icons.
+   Original SVG markup is untouched; CSS overrides presentation attributes. */
+svg [fill="#FF7A21"],svg [fill="#FFB547"],svg [fill="#FF8C3A"],
+svg [fill="#FF5E14"],svg [fill="#FF9447"],svg [fill="#3DDC84"],
+svg [fill="#B5480A"]{fill:var(--gold)!important}
+svg [fill="#3D8BFF"],svg [fill="#7CC0FF"],svg [fill="#CBD1DA"],
+svg [fill="#A9B1BD"],svg [fill="#7C8592"],svg [fill="#8A929E"],
+svg [fill="#F2F4F7"],svg [fill="#fff"],svg [fill="#FFF"]{fill:var(--cream)!important}
+svg [fill="#1A2029"],svg [fill="#1B2029"],svg [fill="#2E3541"],
+svg [fill="#232933"],svg [fill="#14181F"],svg [fill="#0E1218"],
+svg [fill="#0A0D12"],svg [fill="#1F2630"],svg [fill="#2A323E"],
+svg [fill="#3A4350"],svg [fill="#160B03"],svg [fill="#3A1B06"]{fill:var(--charcoal)!important}
+svg [stroke="#FF7A21"],svg [stroke="#FFB547"],svg [stroke="#FF9447"],
+svg [stroke="#FF8C3A"],svg [stroke="#B5480A"],
+svg [stroke="#3DDC84"],svg [stroke="#3D8BFF"]{stroke:var(--gold)!important}
+svg [stroke="#7CC0FF"],svg [stroke="#CBD1DA"],
+svg [stroke="#A9B1BD"],svg [stroke="#8A929E"],svg [stroke="#7C8592"]{stroke:var(--cream)!important}
+svg [stroke="#3A4350"],svg [stroke="#2A323E"],
+svg [stroke="#1F2630"],svg [stroke="#160B03"]{stroke:var(--charcoal)!important}
+svg stop[stop-color="#FF7A21"],svg stop[stop-color="#FFB547"],
+svg stop[stop-color="#FF5E14"],svg stop[stop-color="#FF8C3A"]{stop-color:var(--gold)!important}
+svg stop[stop-color="#3D8BFF"],svg stop[stop-color="#7CC0FF"],
+svg stop[stop-color="#fff"]{stop-color:var(--cream)!important}
+svg stop[stop-color="#1B2029"],svg stop[stop-color="#2E3541"],
+svg stop[stop-color="#232933"],svg stop[stop-color="#14181F"]{stop-color:var(--charcoal)!important}
+/* Preserve visible heater shell depth while keeping strictly to the reference palette. */
+#shell stop:nth-child(1),#shell stop:nth-child(4){stop-color:var(--charcoal)!important}
+#shell stop:nth-child(2){stop-color:color-mix(in srgb,var(--cream) 15%,var(--charcoal))!important}
+#shell stop:nth-child(3){stop-color:color-mix(in srgb,var(--cream) 8%,var(--charcoal))!important}
+/* External SVGs using 'currentColor' remain unchanged, which preserves icon structure. */
+
+  </style>
+  <style>
+    body{margin:0;background:#1C1C1C;color:#FFF8E6;font:16px/1.5 system-ui,sans-serif}
+    #load-status{min-height:100vh;display:grid;place-items:center;text-align:center;padding:24px}
+    #load-status strong{display:block;font-size:28px}
+    #load-status small{display:block;margin-top:8px;color:#FFF8E6;opacity:.75}
+  </style>
+</head>
+<body>
+  <div id="load-status" role="status" aria-live="polite"><div><strong>The Tank</strong><small>Loading website…</small></div></div>
+  <script>
+  (async function(){
+    // Theme is embedded here. The existing content and JS are read from the
+    // original, fixed GitHub revision, preserving the original website.
+    const originalSource = "https://raw.githubusercontent.com/anup-testing/thetank/9f889af106bb91a9b859fe7885a55e3e25c0f8d0/index.html";
+    const themeCSS = document.getElementById('the-tank-single-file-palette').textContent;
+    try {
+      const response = await fetch(originalSource, {cache:'force-cache'});
+      if (!response.ok) throw new Error('HTTP '+response.status);
+      let source = await response.text();
+      if (!/<\/style>/i.test(source)) throw new Error('Original site styles unavailable');
+      source = source.replace(/<\/style>/i, match => match+'\n<style id="the-tank-embedded-new-colours">\n'+themeCSS+'\n</style>');
+      document.open();
+      document.write(source);
+      document.close();
+    } catch (error) {
+      const status = document.getElementById('load-status');
+      status.innerHTML = '<div><strong>Unable to load The Tank</strong><small>Please check your internet connection and reload this page.</small></div>';
+      console.error('The Tank source failed to load:', error);
+    }
+  })();
+  </script>
+</body>
+</html>
